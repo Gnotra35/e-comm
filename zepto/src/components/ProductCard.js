@@ -7,7 +7,11 @@ import saltImage from "../images/salt.png";
 import namkeenImage from "../images/namkeen.jpg";
 import eggImage from "../images/egg.jpg"; // Import new product image
 
-const ProductSection = () => {
+const ProductSection = ({ setCartCount }) => {
+  const handleAddToCart = () => {
+    // Update the cart count when the button is clicked
+    setCartCount(prevCount => prevCount + 1);
+  }
   return (
     <div className="product-section">
       <div className="product-grid">
@@ -29,7 +33,9 @@ const ProductSection = () => {
             <span className="current-price">₹125</span>
             <span className="original-price">₹155</span>
           </div>
-          <button className="add-to-cart-button">Add to Cart</button>
+          <button className="add-to-cart-button" onClick={handleAddToCart}>Add to Cart</button>
+   
+  
         </div>
 
         {/* Second Product Card */}
@@ -48,7 +54,9 @@ const ProductSection = () => {
             <span className="current-price">₹1500</span>
             <span className="original-price">₹1800</span>
           </div>
-          <button className="add-to-cart-button">Add to Cart</button>
+          <button className="add-to-cart-button" onClick={handleAddToCart}>Add to Cart</button>
+   
+  
         </div>
 
         {/* Third Product Card */}
@@ -67,7 +75,8 @@ const ProductSection = () => {
             <span className="current-price">₹799</span>
             <span className="original-price">₹999</span>
           </div>
-          <button className="add-to-cart-button">Add to Cart</button>
+          <button className="add-to-cart-button" onClick={handleAddToCart}>Add to Cart</button>
+   
         </div>
 
         {/* Fourth Product Card */}
@@ -86,7 +95,8 @@ const ProductSection = () => {
             <span className="current-price">₹40</span>
             <span className="original-price">₹50</span>
           </div>
-          <button className="add-to-cart-button">Add to Cart</button>
+          <button className="add-to-cart-button" onClick={handleAddToCart}>Add to Cart</button>
+   
         </div>
 
         {/* Fifth Product Card */}
@@ -105,15 +115,16 @@ const ProductSection = () => {
             <span className="current-price">₹80</span>
             <span className="original-price">₹100</span>
           </div>
-          <button className="add-to-cart-button">Add to Cart</button>
+          <button className="add-to-cart-button" onClick={handleAddToCart}>Add to Cart</button>
+   
         </div>
 
-        {/* Sixth Product Card (New Product) */}
+       
        {/* Sixth Product Card (New Product) */}
 <div className="product-card">
   <div className="discount-badge">10% Off</div>
   <img
-    src={eggImage} // Use the imported image
+    src={eggImage} 
     alt="eggs"
     className="product-image"
   />
@@ -125,13 +136,14 @@ const ProductSection = () => {
          <span className="current-price">₹60</span>
          <span className="original-price">₹80</span>
          </div>
-         <button className="add-to-cart-button">Add to Cart</button>
+         <button className="add-to-cart-button" onClick={handleAddToCart}>Add to Cart</button>
+   
          </div>
            {/* 7th Product Card (New Product) */}
              <div className="product-card">
             <div className="discount-badge">10% Off</div>
             <img
-            src={eggImage} // Use the imported image
+            src={eggImage} 
              alt="eggs"
             className="product-image"
                 />
@@ -143,13 +155,14 @@ const ProductSection = () => {
           <span className="current-price">₹60</span>
           <span className="original-price">₹80</span>
           </div>
-          <button className="add-to-cart-button">Add to Cart</button>
+          <button className="add-to-cart-button" onClick={handleAddToCart}>Add to Cart</button>
+   
          </div>
            {/* 8th Product Card (New Product) */}
            <div className="product-card">
             <div className="discount-badge">10% Off</div>
             <img
-            src={eggImage} // Use the imported image
+            src={eggImage} 
              alt="eggs"
             className="product-image"
                 />
@@ -167,7 +180,7 @@ const ProductSection = () => {
           <div className="product-card">
             <div className="discount-badge">10% Off</div>
             <img
-            src={eggImage} // Use the imported image
+            src={eggImage} 
              alt="eggs"
             className="product-image"
                 />
@@ -179,13 +192,14 @@ const ProductSection = () => {
           <span className="current-price">₹60</span>
           <span className="original-price">₹80</span>
           </div>
-          <button className="add-to-cart-button">Add to Cart</button>
+          <button className="add-to-cart-button" onClick={handleAddToCart}>Add to Cart</button>
+   
          </div>
           {/* 10th Product Card (New Product) */}
           <div className="product-card">
             <div className="discount-badge">10% Off</div>
             <img
-            src={eggImage} // Use the imported image
+            src={eggImage} 
              alt="eggs"
             className="product-image"
                 />
@@ -197,7 +211,8 @@ const ProductSection = () => {
           <span className="current-price">₹60</span>
           <span className="original-price">₹80</span>
           </div>
-          <button className="add-to-cart-button">Add to Cart</button>
+          <button className="add-to-cart-button" onClick={handleAddToCart}>Add to Cart</button>
+   
          </div>
       </div>
     </div>
