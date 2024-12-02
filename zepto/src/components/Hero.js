@@ -1,5 +1,5 @@
 import React from "react";
-import { FaUser, FaShoppingCart, FaSearch } from 'react-icons/fa'; // Import the icons
+import { FaUser, FaShoppingCart, FaSearch } from 'react-icons/fa'; 
 import "../styles/Hero.css";
 
 const Hero = () => {
