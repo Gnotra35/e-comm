@@ -63,7 +63,7 @@
   
   
   
-  /* Other existing styles remain unchanged */
+
   
   
   
@@ -123,7 +123,7 @@
   
   .login-button svg,
   .cart-button svg {
-    margin-right: 8px; /* Add space between icon and text */
+    margin-right: 8px; 
   }
   
   /* Banner Section Styling */
