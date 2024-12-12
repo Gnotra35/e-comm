@@ -1,7 +1,7 @@
 import React from 'react';
 import ProductCard from '../components/ProductCard';
 const Explore = () => {
-  // Sample data for products
+  
   const products = [
     {
       id: 1,
