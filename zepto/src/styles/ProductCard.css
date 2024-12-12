@@ -32,40 +32,40 @@
     font-weight: bold;
     padding: 5px 8px;
     border-radius: 4px;
-    z-index: 2; /* Ensure the badge stays above the image */
+    z-index: 2; 
     animation: zoomBadgeAnimation 5s infinite ease-in-out;
   }
   
   .product-image {
     width: 100%;
-    height: 160px; /* Automatically adjust height based on width */
+    height: 160px; 
     object-fit: contain;
     margin-bottom: 10px;
     animation: zoomImageAnimation 5s infinite ease-in-out;
-    z-index: 1; /* Ensure image stays below the discount badge */
+    z-index: 1; 
   }
   
   @keyframes zoomImageAnimation {
     0% {
-      transform: scale(1); /* Start at normal size */
+      transform: scale(1); 
     }
     50% {
-      transform: scale(1.2); /* Maximum zoom effect */
+      transform: scale(1.2); 
     }
     100% {
-      transform: scale(1); /* Return to normal size */
+      transform: scale(1); 
     }
   }
   
   @keyframes zoomBadgeAnimation {
     0% {
-      transform: scale(1.2); /* Start at zoomed-in size */
+      transform: scale(1.2);
     }
     50% {
-      transform: scale(1); /* Minimum zoom effect */
+      transform: scale(1); 
     }
     100% {
-      transform: scale(1.2); /* Return to zoomed-in size */
+      transform: scale(1.2); 
     }
   }
   

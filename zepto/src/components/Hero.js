@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
 import { FaUser, FaShoppingCart, FaSearch } from 'react-icons/fa'; 
 import { useNavigate } from 'react-router-dom';
+=======
+import React from "react";
+import { FaUser, FaShoppingCart, FaSearch } from 'react-icons/fa'; 
+>>>>>>> 0b81f4a714fd0a6d57506789592f7e13d83ec538
 import "../styles/Hero.css";
 import ProductCard from "../components/ProductCard";
 

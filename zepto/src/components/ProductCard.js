@@ -1,11 +1,11 @@
 import React from "react";
-import "../styles/ProductCard.css"; // Import the CSS file.
+import "../styles/ProductCard.css"; 
 import alloutImage from "../images/allout.jpg";
 import shoesImage from "../images/shoes.jpg"; 
 import shirtImage from "../images/shirt.jpg";
 import saltImage from "../images/salt.png";
 import namkeenImage from "../images/namkeen.jpg";
-import eggImage from "../images/egg.jpg"; // Import new product image
+import eggImage from "../images/egg.jpg"; 
 
 const ProductSection = ({ setCartCount }) => {
   const handleAddToCart = () => {
@@ -119,8 +119,6 @@ const ProductSection = ({ setCartCount }) => {
    
         </div>
 
-       
-       {/* Sixth Product Card (New Product) */}
 <div className="product-card">
   <div className="discount-badge">10% Off</div>
   <img
